@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Site!</title>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #3d6efd;
+            color: #fff;
+            font-family: Arial;
+        }
+
+    #welcome {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    #button {
+/*        display: block;*/
+		text-decoration: none;
+        margin: 50px auto;
+        padding: 20px 50px;
+        border: 2px solid #fff;
+        border-radius: 0px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: transparent;
+        transition: all 0.3s ease;
+    }
+
+    #button:hover {
+        color: #1e1f26;
+        background-color: #fff;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome to Image Generator Webapp!</h1>
+        <a href="{% url 'generate_images' %}" id="button">Get Started</a>
+    </div>
+</body>
+</html>
