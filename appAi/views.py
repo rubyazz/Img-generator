@@ -4,7 +4,7 @@ from django.http import HttpResponse, JsonResponse
 
 # put here your own api from openai 
 # https://platform.openai.com/docs/api-reference/introduction
-openai.api_key = "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"
+openai.api_key = ""
 
 def generate_images(request):
     if request.method == 'POST':
